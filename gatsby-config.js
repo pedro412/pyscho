@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Psycho starter`,
+    title: `Vimind`,
     description: `Página de psicología...`,
     author: `@pedro412`,
   },
