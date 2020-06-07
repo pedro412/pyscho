@@ -1,5 +1,5 @@
-import React from 'react'
-import { Navbar, Nav, LogoContainer, NavbarNav, NavLink } from './NavbarStyled'
+import React from 'react';
+import { Navbar, Nav, LogoContainer, NavbarNav, NavLink } from './NavbarStyled';
 
 const NavbarComponent = () => {
   return (
@@ -26,7 +26,7 @@ const NavbarComponent = () => {
         </div>
       </Nav>
     </Navbar>
-  )
-}
+  );
+};
 
-export default NavbarComponent
+export default NavbarComponent;

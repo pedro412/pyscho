@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
-import NavbarComponent from '../NavbarComponent/NavbarComponent'
-import { Main } from './LayoutStyled'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import NavbarComponent from '../NavbarComponent/NavbarComponent';
+import { Main } from './LayoutStyled';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -27,11 +27,11 @@ const Layout = ({ children }) => {
         </footer> */}
       </div>
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
