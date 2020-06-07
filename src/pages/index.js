@@ -1,22 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import Layout from '../components/Layout/layout'
 import SEO from '../components/seo'
-import Form from '../components/Form/Form'
+import Porque from './Porque/Porque'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi there!</h1>
-    <p>Welcome to your new Gatsby site Vimind.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-      <Form />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Porque />
   </Layout>
 )
 
