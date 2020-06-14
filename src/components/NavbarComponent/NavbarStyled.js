@@ -14,6 +14,21 @@ export const Nav = styled.div`
 `;
 export const LogoContainer = styled.div`
   color: #00c4cc;
+  text-align: center;
+
+  span {
+    font-weight: 500;
+    font-size: 28px;
+    display: block;
+    line-height: 25px;
+  }
+
+  p {
+    color: #ff5ad6;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
 `;
 
 export const NavbarNav = styled.ul`

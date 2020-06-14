@@ -1,48 +1,56 @@
 import React from 'react';
 import styled from 'styled-components';
-import Amigos from './amigos';
+import Tablets from './tablets';
 
 const Porque = () => {
   return (
-    <PorqueContainer>
-      <TextContainer>
-        <TextHeader>Apoyo psicológico que se adapta a ti</TextHeader>
-        <p>
-          En vital Mind somos un equipo de
-          <br />
-          psicólogos capacitados y certificados, <br /> en donde ofrecemos apoyo{' '}
-          <br />
-          personalizado a las mujeres que día <br />
-          a día se enfrenta a distintas limitantes <br />
-          que nos les permiten ser su mejor versión.
-        </p>
-      </TextContainer>
-      <ImageContainer>
-        <Amigos />
-      </ImageContainer>
-    </PorqueContainer>
+    <div>
+      <Container>
+        <Text>
+          <h2>Psicólogos profesionales apalancados por tecnología.</h2>
+          <p>
+            Ofrecemos un programa de tratamiento integral que combiana
+            técnología con asesoria profesional. Te damos acceso a un lugar para
+            crear conexiones y una comunidad segura y sin prejuicios que
+            promueve el intercambio de experiencias e ideas, empatía,
+            comprensión y la esperanza de construir la vida que deseas vivir.
+          </p>
+        </Text>
+        <ImgContainer>
+          <Tablets />
+        </ImgContainer>
+      </Container>
+      <ImagesContainer>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </ImagesContainer>
+    </div>
   );
 };
 
-const PorqueContainer = styled.div`
+const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 400px;
 `;
 
-const TextContainer = styled.div`
-  width: 500px;
+const ImgContainer = styled.div`
+  min-width: 600px;
+  width: 100%;
 `;
 
-const TextHeader = styled.h2`
-  max-width: 260px;
-  font-weight: bold;
+const ImagesContainer = styled.div`
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `;
 
-const ImageContainer = styled.div`
-  width: 500px;
-  margin-right: 6rem;
+const Text = styled.div`
+  h2 {
+    color: #4b0ccf;
+  }
 `;
 
 export default Porque;

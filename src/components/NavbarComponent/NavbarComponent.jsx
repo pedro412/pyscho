@@ -6,7 +6,9 @@ const NavbarComponent = () => {
     <Navbar>
       <Nav>
         <LogoContainer>
-          <h1>Vital Mind</h1>
+          <span>VITAL</span>
+          <span>MIND</span>
+          <p>PSICÓLOGOS</p>
         </LogoContainer>
         <div>
           <NavbarNav>
